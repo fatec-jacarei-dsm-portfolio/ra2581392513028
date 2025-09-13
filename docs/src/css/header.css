@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #fff;
+    height: 6.5rem;
+    justify-content: flex-end;
+    border-radius: 9px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.menu-header {
+    display: flex;
+    margin-right: 6rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #333333;
+    padding: 2rem;
+    min-width: 6rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-weight: 600;
+}
+
+.menu-link:hover {
+    background-color: #f0f0f0b6;
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        gap: 5%;
+    }
+
+    .menu-link {
+        min-width: 0.3rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
