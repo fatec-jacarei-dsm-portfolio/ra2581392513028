@@ -1,45 +1,79 @@
+:root {
+    --rosa-principal: #ff7db8;
+    --rosa-claro: #ffd6e8;
+    --lilas: #c8a2ff;
+    --lilas-claro: #f5eaff;
+    --branco: #ffffff;
+    --cinza-texto: #444;
+}
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
+body {
+    background-color: var(--rosa-claro);
+    color: var(--cinza-texto);
+}
+
+/* HEADER */
 header {
-    display: flex;
-    background-color: #fff;
-    height: 6.5rem;
-    justify-content: flex-end;
-    border-radius: 9px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding: 18px 30px;
+    background: var(--branco);
+    border-bottom: 2px solid var(--lilas-claro);
+    box-shadow: 0 4px 12px rgba(200, 162, 255, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .menu-header {
     display: flex;
-    margin-right: 6rem;
+    justify-content: center;
+    gap: 40px;
 }
 
 .menu-link {
-    text-decoration: none;
-    color: #333333;
-    padding: 2rem;
-    min-width: 6rem;
-    text-align: center;
-    padding-top: 3rem;
+    font-size: 1.1rem;
     font-weight: 600;
+    color: var(--rosa-principal);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 14px;
+    transition: 0.3s ease-in-out;
 }
 
 .menu-link:hover {
-    background-color: #f0f0f0b6;
+    background-color: var(--lilas-claro);
+    color: var(--lilas);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(150, 110, 255, 0.2);
 }
 
-@media screen and (max-width: 320px) {
-    header {
-        gap: 5%;
-    }
+#logo-linkedin-github {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-    .menu-link {
-        min-width: 0.3rem;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-    }
+#logo-linkedin-github img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    padding: 6px;
+    background: var(--branco);
+    border: 2px solid var(--lilas-claro);
+    transition: 0.3s;
+}
+
+#logo-linkedin-github img:hover {
+    transform: scale(1.1);
+    border-color: var(--lilas);
+    box-shadow: 0 4px 10px rgba(200, 162, 255, 0.3);
 }

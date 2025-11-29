@@ -1,210 +1,52 @@
-body {
-    background-color: white;
-    color: #333333;
-    font-family: sans-serif;
+/* ===========================================
+   ESTILO PÁGINA INFORMAÇÕES
+=========================================== */
+
+:root {
+    --rosa-principal: #ff7db8;
+    --rosa-claro: #ffd6e8;
+    --lilas: #c8a2ff;
+    --lilas-claro: #f5eaff;
+    --branco: #ffffff;
+    --cinza-texto: #444;
 }
 
 main {
-    height: 88.5vh;
+    padding: 40px;
     display: flex;
+    justify-content: center;
 }
 
 .content-wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.text-section {
-    width: 60%;
-    padding: 2% 0 0 7%;
-}
-
-.about-me,
-.professional-skills {
-    margin-bottom: 4%;
+    background: var(--branco);
+    padding: 40px;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(200, 162, 255, 0.25);
 }
 
 .main-title {
-    color: #D16D8A;
-    padding-bottom: 3%;
-    font-size: 2.5rem;
-    margin-top: 2rem;
+    color: var(--rosa-principal);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
 }
 
+.about-text {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Habilidades */
 .section-title {
-    color: #D16D8A;
-    padding-bottom: 3%;
-    font-size: 1.8rem;
-    margin-top: 2rem;
-}
-
-ul {
-    padding-left: 4%;
-}
-
-.about-text,
-.skill-item {
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.6; 
+    font-size: 1.6rem;
+    color: var(--lilas);
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
 .skill-item {
-    padding-left: 2%;
-    padding-bottom: 1%;
-}
-
-.image-section {
-    display: flex;
-    flex-direction: row;
-    height: 90%;
-    width: 40%;
-    padding-top: 0.5%;
-    gap: 10%;
-    justify-content: flex-end;
-}
-
-.icons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-}
-
-.icons-container img {
-    height: 45%;
-}
-
-.bookshelf-img {
-    width: 80%;
-    height: auto;
-}
-
-#logo-linkedin-github {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    z-index: 1000;
-}
-
-#linkedin,
-#github {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    transition: transform 0.2s ease;
-}
-
-#linkedin:hover,
-#github:hover {
-    transform: scale(1.1);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-#github:hover {
-    border-radius: 50%;
-}
-
-
-
-@media screen and (max-width: 1024px) {
-    .text-section {
-        width: 57%;
-    }
-    .main-title,
-    .section-title {
-        font-size: 1.6rem;
-    }
-    .professional-skills {
-        margin-bottom: 12%;
-    }
-    .about-text,
-    .skill-item {
-        font-size: 1.2rem;
-    }
-    .icons-container img {
-        height: 25%;
-    }
-    #logo-linkedin-github {
-        padding-right: 1%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-        padding-top: 10%;
-        width: 93%;
-        margin: 0 auto;
-    }
-    .text-section {
-        width: 100%;
-        padding-left: 12%;
-    }
-    .image-section {
-        flex-direction: column;
-        width: 100%;
-        gap: 1%;
-        align-items: center;
-        padding-top: 5%;
-    }
-    .icons-container {
-        flex-direction: row;
-        gap: 3%;
-        width: 100%;
-        padding-left: 4%;
-    }
-    .icons-container img {
-        width: 45%;
-        height: 90%;
-    }
-    .bookshelf-img {
-        width: 40%;
-        height: auto;
-    }
-    #logo-linkedin-github {
-        width: 7%;
-        padding-right: 2%;
-    }
-    #linkedin,
-    #github {
-        width: 95%;
-        border-radius: 10px;
-    }
-}
-
-@media screen and (max-width: 455px) {
-    .content-wrapper {
-        width: 88%;
-        padding-top: 12%;
-    }
-    .text-section {
-        padding-left: 8%;
-    }
-    .about-text,
-    .skill-item {
-        font-size: 1rem;
-    }
-    #logo-linkedin-github {
-        width: 10%;
-        padding-left: 1%;
-    }
-    #linkedin,
-    #github {
-        width: 100%;
-        border-radius: 10px;
-    }
-    .image-section {
-        padding-left: 4%;
-    }
-    .bookshelf-img {
-        width: 40%;
-        height: auto;
-    }
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: var(--cinza-texto);
 }
